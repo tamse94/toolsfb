@@ -1,7 +1,11 @@
+import SessionWrapper from "./components/SessionWrapper";
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="id">
-      <body>{children}</body>
-    </html>
-  )
+    <SessionWrapper>
+      <html lang="id">
+        <body>{children}</body>
+      </html>
+    </SessionWrapper>
+  );
 }
